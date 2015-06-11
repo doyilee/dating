@@ -1,6 +1,6 @@
 class Female::FemalesController < ApplicationController
 
 	def index
-		@men = User.where(gender: params[:gender]).all
+		@men = User.where(gender: 0)
 	end
 end

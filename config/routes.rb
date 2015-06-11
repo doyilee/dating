@@ -10,11 +10,12 @@ Rails.application.routes.draw do
 
   namespace :male do
     get '/' => 'males#index'
-  
+    get '/woman' => 'males#show'
   end
 
   namespace :female do
     get '/' => 'females#index'
+    get '/man' => 'females#show'
   end
 
 end

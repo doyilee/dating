@@ -1,0 +1,7 @@
+<ul>
+	<% @women.each do |woman| %>
+		<li>
+			<%= link_to("Username: #{woman.username}, Age:#{woman.age}", male_woman_path(woman.id))%>
+		</li>
+	<% end %>
+</ul>

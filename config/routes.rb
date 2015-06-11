@@ -8,4 +8,13 @@ Rails.application.routes.draw do
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
 
+  namespace :male do
+    get '/' => 'males#index'
+  
+  end
+
+  namespace :female do
+    get '/' => 'females#index'
+  end
+
 end

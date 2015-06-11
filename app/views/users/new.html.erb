@@ -5,19 +5,19 @@
 	<%= f.text_field(:name)%>
 
 	<%= f.label(:gender)%>
-	<%= f.select(:gender, options_for_select([male, female]))%>
+	<%= f.select(:gender, options_for_select(['male', 'female']))%>
 
 	<%= f.label(:age)%>
-	<%= f.select(:age options_for_select([18...100]))%>
+	<%= f.select(:age, options_for_select(18..100))%>
 
 	<%= f.label(:username) %>
 	<%= f.text_field(:username)%>
 
 	<%= f.label(:password)%>
-	<%= f.password(:password)%>
+	<%= f.password_field(:password)%>
 
 	<%= f.label(:password_confirmation)%>
-	<%= f.password(:password_confirmation)%>
+	<%= f.password_field(:password_confirmation)%>
 
 	<%= f.submit('Sign up')%>
 <% end %>
